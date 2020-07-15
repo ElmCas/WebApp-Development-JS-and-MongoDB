@@ -1,0 +1,16 @@
+<head>
+  <title>textcircle</title>
+</head>
+
+<body>
+  <h1>Welcome to textcircle</h1>
+  {{> editor}}
+</body>
+
+<template name="editor">
+  {{>sharejsCM docid=docid onRender=config id="editor"}}
+</template>
+
+<template name="viewer">
+  <iframe id="viewer_iframe"> </iframe>
+</template>
